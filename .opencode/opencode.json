@@ -1,0 +1,6 @@
+{
+  "$schema": "https://opencode.ai/schema/opencode.json",
+  "name": "OpenSIN-Skills",
+  "description": "The world's largest open-source AI agent skill library",
+  "version": "1.0.0"
+}
