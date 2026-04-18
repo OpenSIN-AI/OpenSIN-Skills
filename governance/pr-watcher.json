@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "repo": "OpenSIN-Skills",
+  "org": "OpenSIN-AI",
+  "watcher": {
+    "type": "gh-cli-cron",
+    "script": "scripts/watch-pr-feedback.sh",
+    "fallback": "manual-gh-review"
+  },
+  "reviewChecklist": [
+    "Linked issue or tracker exists",
+    "Governance files remain present",
+    "Skill metadata/frontmatter remains valid where touched",
+    "Markdown, JSON, and YAML artifacts are valid",
+    "No secrets or credentials were introduced"
+  ],
+  "stopConditions": [
+    "Missing governance artifact",
+    "Invalid JSON or YAML in governance, workflow, or template files",
+    "Secret material detected in diff"
+  ]
+}
