@@ -85,15 +85,32 @@ graph TB
 git clone https://github.com/OpenSIN-AI/OpenSIN-Skills.git
 cd OpenSIN-Skills
 
-# Install with bun (NEVER npm)
-bun install
+# No package install required
+# The repository is script-first and validates via stdlib Python tooling
 
-# Validate all skills
+# Validate repository baseline (profile-aware)
 python3 scripts/validate-skill.py --all .
+
+# Enforce full OpenSIN canonical metadata for strict rollout work
+python3 scripts/validate-skill.py --all . --strict
 
 # Generate skill catalog
 python3 scripts/catalog-generator.py . --output catalog.json --stats
 ```
+
+## Governance & Operations
+
+OpenSIN-Skills ships with the canonical governance pack for OpenSIN repositories:
+
+- `governance/repo-governance.json` — policy-as-code baseline
+- `governance/pr-watcher.json` — PR watcher contract
+- `platforms/registry.json` — inbound platform registry
+- `n8n-workflows/inbound-intake.json` — canonical intake workflow
+- `docs/03_ops/inbound-intake.md` — operator guide
+- `scripts/watch-pr-feedback.sh` — PR watcher runtime
+- `.github/` — CODEOWNERS, issue forms, PR template, OCI-dispatch CI
+
+CI/CD follows the org-standard pattern: GitHub events dispatch into the OCI / n8n control plane via `OpenSIN-AI/sin-github-action` instead of long-running GitHub-hosted jobs.
 
 ## Skill Domains
 
@@ -151,8 +168,11 @@ See [SKILL-AUTHORING-STANDARD.md](SKILL-AUTHORING-STANDARD.md) for full details.
 All Python scripts are **stdlib-only** (zero pip installs):
 
 ```bash
-# Validate skills
+# Export profile-aware validation results
 python3 scripts/validate-skill.py --all . --json
+
+# Enforce canonical OpenSIN metadata everywhere
+python3 scripts/validate-skill.py --all . --strict
 
 # Generate catalog
 python3 scripts/catalog-generator.py . --output catalog.json

@@ -35,9 +35,12 @@
    ```
 
 5. Validate your skill:
-   ```bash
-   python3 scripts/validate-skill.py your-skill-name/SKILL.md
-   ```
+    ```bash
+    python3 scripts/validate-skill.py your-skill-name/SKILL.md
+
+    # For new canonical OpenSIN skills, also enforce strict metadata
+    python3 scripts/validate-skill.py your-skill-name/SKILL.md --strict
+    ```
 
 6. Submit a PR with:
    - Clear title: `feat(domain): add skill-name`
