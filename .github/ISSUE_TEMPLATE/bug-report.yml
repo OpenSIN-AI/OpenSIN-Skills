@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a defect in skills, docs, automation, or governance.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-flight checks
+      options:
+        - label: I searched for an existing issue
+          required: true
+        - label: I can reproduce this on the default branch
+          required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the defect and the expected behavior.
+    validations:
+      required: true
+  - type: input
+    id: path
+    attributes:
+      label: Impacted path
+      placeholder: e.g. operations/planning/plan/SKILL.md
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation / reproduction
+      description: Include commands, stack traces, or checks.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link screenshots, logs, or other visual proof.

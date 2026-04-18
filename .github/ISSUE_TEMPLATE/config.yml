@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: OpenSIN-Skills README
+    url: https://github.com/OpenSIN-AI/OpenSIN-Skills/blob/main/README.md
+    about: Review repository usage and governance guidance before filing an issue.
