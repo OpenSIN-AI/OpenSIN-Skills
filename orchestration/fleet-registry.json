@@ -1,0 +1,1616 @@
+{
+  "$schema": "https://opensin.ai/schemas/fleet-registry.v1.json",
+  "version": "1.0.0",
+  "generated": "2026-04-18",
+  "description": "OpenSIN Fleet Registry \u2014 Single Source of Truth for all A2A agents and Team managers. Used by SIN-Orchestrator (God Agent) for autonomous routing and parallel dispatch.",
+  "stats": {
+    "total_agents": 109,
+    "total_teams": 17,
+    "total_entries": 126
+  },
+  "domains": {
+    "coding": {
+      "description": "Software development \u2014 frontend, backend, fullstack, DevOps, plugins, tools, AI",
+      "team": "Team-SIN-Code-Core",
+      "sub_teams": [
+        "Team-SIN-Code-Frontend",
+        "Team-SIN-Code-Backend",
+        "Team-SIN-Code-CyberSec"
+      ],
+      "agents": [
+        {
+          "name": "A2A-SIN-Code-Frontend",
+          "capabilities": [
+            "react",
+            "nextjs",
+            "ui",
+            "css",
+            "tailwind",
+            "components"
+          ],
+          "keywords": [
+            "frontend",
+            "ui",
+            "design",
+            "component",
+            "page",
+            "layout",
+            "button",
+            "form"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Code-Backend",
+          "capabilities": [
+            "api",
+            "database",
+            "auth",
+            "server",
+            "rest",
+            "graphql"
+          ],
+          "keywords": [
+            "backend",
+            "api",
+            "database",
+            "server",
+            "endpoint",
+            "auth",
+            "migration"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Code-Fullstack",
+          "capabilities": [
+            "nextjs",
+            "react",
+            "api",
+            "database",
+            "deployment"
+          ],
+          "keywords": [
+            "fullstack",
+            "webapp",
+            "application",
+            "saas",
+            "platform"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Code-Command",
+          "capabilities": [
+            "cli",
+            "terminal",
+            "scripts",
+            "automation"
+          ],
+          "keywords": [
+            "cli",
+            "command",
+            "terminal",
+            "script",
+            "tool"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Code-Plugin",
+          "capabilities": [
+            "opencode-plugin",
+            "mcp-server",
+            "extension"
+          ],
+          "keywords": [
+            "plugin",
+            "mcp",
+            "extension",
+            "integration"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Code-Tool",
+          "capabilities": [
+            "utility",
+            "library",
+            "sdk",
+            "helper"
+          ],
+          "keywords": [
+            "tool",
+            "utility",
+            "library",
+            "helper",
+            "sdk"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Code-AI",
+          "capabilities": [
+            "ml",
+            "llm",
+            "embeddings",
+            "fine-tuning",
+            "inference"
+          ],
+          "keywords": [
+            "ai",
+            "ml",
+            "model",
+            "training",
+            "embedding",
+            "inference",
+            "neural"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Code-DataScience",
+          "capabilities": [
+            "data-analysis",
+            "visualization",
+            "pandas",
+            "jupyter"
+          ],
+          "keywords": [
+            "data",
+            "analysis",
+            "visualization",
+            "pandas",
+            "statistics",
+            "chart"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Code-DevOps",
+          "capabilities": [
+            "docker",
+            "ci-cd",
+            "infrastructure",
+            "monitoring"
+          ],
+          "keywords": [
+            "devops",
+            "docker",
+            "deploy",
+            "infrastructure",
+            "monitoring",
+            "pipeline"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Coding-CEO",
+          "capabilities": [
+            "architecture",
+            "code-review",
+            "technical-leadership"
+          ],
+          "keywords": [
+            "architecture",
+            "review",
+            "leadership",
+            "strategy",
+            "refactor"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Code-GitLab-LogsCenter",
+          "capabilities": [
+            "log-analysis",
+            "error-detection",
+            "auto-issue-creation"
+          ],
+          "keywords": [
+            "logs",
+            "errors",
+            "monitoring",
+            "debugging"
+          ]
+        }
+      ]
+    },
+    "security": {
+      "description": "Cybersecurity \u2014 penetration testing, auditing, forensics, exploit research",
+      "team": "Team-SIN-Code-CyberSec",
+      "agents": [
+        {
+          "name": "A2A-SIN-Security-Web",
+          "capabilities": [
+            "web-pentest",
+            "xss",
+            "sqli",
+            "csrf"
+          ],
+          "keywords": [
+            "web",
+            "security",
+            "vulnerability",
+            "xss",
+            "injection"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Network",
+          "capabilities": [
+            "network-scan",
+            "nmap",
+            "firewall",
+            "ids"
+          ],
+          "keywords": [
+            "network",
+            "scan",
+            "firewall",
+            "port",
+            "traffic"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Recon",
+          "capabilities": [
+            "osint",
+            "subdomain",
+            "fingerprint",
+            "enumeration"
+          ],
+          "keywords": [
+            "recon",
+            "osint",
+            "subdomain",
+            "discover",
+            "enumerate"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Exploit",
+          "capabilities": [
+            "exploit-dev",
+            "buffer-overflow",
+            "rce"
+          ],
+          "keywords": [
+            "exploit",
+            "buffer",
+            "overflow",
+            "rce",
+            "payload"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Forensics",
+          "capabilities": [
+            "disk-forensics",
+            "memory-analysis",
+            "incident-response"
+          ],
+          "keywords": [
+            "forensics",
+            "incident",
+            "evidence",
+            "memory",
+            "disk"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Cloud",
+          "capabilities": [
+            "aws-security",
+            "gcp-security",
+            "azure-security"
+          ],
+          "keywords": [
+            "cloud",
+            "aws",
+            "gcp",
+            "azure",
+            "iam",
+            "s3"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Mobile",
+          "capabilities": [
+            "android-pentest",
+            "ios-pentest",
+            "apk-analysis"
+          ],
+          "keywords": [
+            "mobile",
+            "android",
+            "ios",
+            "apk",
+            "app"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Crypto",
+          "capabilities": [
+            "cryptanalysis",
+            "encryption",
+            "blockchain-audit"
+          ],
+          "keywords": [
+            "crypto",
+            "encryption",
+            "blockchain",
+            "key",
+            "certificate"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-AI",
+          "capabilities": [
+            "adversarial-ml",
+            "model-security",
+            "prompt-injection"
+          ],
+          "keywords": [
+            "ai-security",
+            "adversarial",
+            "prompt-injection",
+            "model"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Auth",
+          "capabilities": [
+            "auth-bypass",
+            "oauth-audit",
+            "session-hijacking"
+          ],
+          "keywords": [
+            "auth",
+            "oauth",
+            "session",
+            "token",
+            "login"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Audit",
+          "capabilities": [
+            "compliance-audit",
+            "security-review",
+            "risk-assessment"
+          ],
+          "keywords": [
+            "audit",
+            "compliance",
+            "risk",
+            "assessment",
+            "review"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Fuzz",
+          "capabilities": [
+            "fuzzing",
+            "crash-detection",
+            "input-mutation"
+          ],
+          "keywords": [
+            "fuzz",
+            "crash",
+            "mutation",
+            "input",
+            "boundary"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-IoT",
+          "capabilities": [
+            "iot-pentest",
+            "firmware-analysis",
+            "hardware-hacking"
+          ],
+          "keywords": [
+            "iot",
+            "firmware",
+            "hardware",
+            "embedded",
+            "sensor"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Malware",
+          "capabilities": [
+            "malware-analysis",
+            "reverse-engineering",
+            "sandbox"
+          ],
+          "keywords": [
+            "malware",
+            "reverse",
+            "sandbox",
+            "virus",
+            "trojan"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-RedTeam",
+          "capabilities": [
+            "red-team",
+            "adversary-simulation",
+            "attack-chain"
+          ],
+          "keywords": [
+            "redteam",
+            "adversary",
+            "attack",
+            "simulation",
+            "lateral"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Security-Social",
+          "capabilities": [
+            "social-engineering",
+            "phishing-simulation"
+          ],
+          "keywords": [
+            "social",
+            "phishing",
+            "engineering",
+            "pretexting"
+          ]
+        }
+      ]
+    },
+    "messaging": {
+      "description": "All messaging platforms \u2014 chat, email, SMS, social messaging",
+      "team": "Team-SIN-Messaging",
+      "agents": [
+        {
+          "name": "A2A-SIN-Telegram",
+          "capabilities": [
+            "telegram-bot",
+            "telegram-messaging",
+            "telegram-groups"
+          ],
+          "keywords": [
+            "telegram",
+            "tg",
+            "bot"
+          ]
+        },
+        {
+          "name": "A2A-SIN-WhatsApp",
+          "capabilities": [
+            "whatsapp-messaging",
+            "whatsapp-business"
+          ],
+          "keywords": [
+            "whatsapp",
+            "wa",
+            "message"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Discord",
+          "capabilities": [
+            "discord-bot",
+            "discord-messaging"
+          ],
+          "keywords": [
+            "discord"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Slack",
+          "capabilities": [
+            "slack-bot",
+            "slack-messaging",
+            "slack-workflows"
+          ],
+          "keywords": [
+            "slack"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Signal",
+          "capabilities": [
+            "signal-messaging",
+            "encrypted-chat"
+          ],
+          "keywords": [
+            "signal",
+            "encrypted"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Email",
+          "capabilities": [
+            "imap",
+            "smtp",
+            "email-automation"
+          ],
+          "keywords": [
+            "email",
+            "mail",
+            "smtp",
+            "imap",
+            "inbox"
+          ]
+        },
+        {
+          "name": "A2A-SIN-SMS",
+          "capabilities": [
+            "sms-send",
+            "sms-receive"
+          ],
+          "keywords": [
+            "sms",
+            "text-message"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Teams",
+          "capabilities": [
+            "ms-teams-bot",
+            "teams-messaging"
+          ],
+          "keywords": [
+            "teams",
+            "microsoft-teams"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Matrix",
+          "capabilities": [
+            "matrix-protocol",
+            "element-chat"
+          ],
+          "keywords": [
+            "matrix",
+            "element"
+          ]
+        },
+        {
+          "name": "A2A-SIN-IRC",
+          "capabilities": [
+            "irc-bot",
+            "irc-messaging"
+          ],
+          "keywords": [
+            "irc"
+          ]
+        },
+        {
+          "name": "A2A-SIN-WeChat",
+          "capabilities": [
+            "wechat-messaging",
+            "wechat-mini-program"
+          ],
+          "keywords": [
+            "wechat"
+          ]
+        },
+        {
+          "name": "A2A-SIN-LINE",
+          "capabilities": [
+            "line-messaging",
+            "line-bot"
+          ],
+          "keywords": [
+            "line"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Nostr",
+          "capabilities": [
+            "nostr-protocol",
+            "decentralized-social"
+          ],
+          "keywords": [
+            "nostr",
+            "decentralized"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Feishu",
+          "capabilities": [
+            "feishu-messaging",
+            "lark-bot"
+          ],
+          "keywords": [
+            "feishu",
+            "lark"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Google-Chat",
+          "capabilities": [
+            "google-chat-bot",
+            "workspace-messaging"
+          ],
+          "keywords": [
+            "google-chat",
+            "gchat"
+          ]
+        },
+        {
+          "name": "A2A-SIN-RocketChat",
+          "capabilities": [
+            "rocketchat-bot",
+            "rocketchat-messaging"
+          ],
+          "keywords": [
+            "rocketchat"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Mattermost",
+          "capabilities": [
+            "mattermost-bot",
+            "mattermost-messaging"
+          ],
+          "keywords": [
+            "mattermost"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Beeper",
+          "capabilities": [
+            "unified-messaging",
+            "multi-platform-chat"
+          ],
+          "keywords": [
+            "beeper",
+            "unified"
+          ]
+        },
+        {
+          "name": "A2A-SIN-BlueBubbles",
+          "capabilities": [
+            "imessage-bridge",
+            "imessage-automation"
+          ],
+          "keywords": [
+            "imessage",
+            "bluebubbles"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Chatroom",
+          "capabilities": [
+            "multi-platform-chat",
+            "chat-management"
+          ],
+          "keywords": [
+            "chatroom",
+            "chat"
+          ]
+        },
+        {
+          "name": "A2A-SIN-WebChat",
+          "capabilities": [
+            "web-chat-widget",
+            "live-chat"
+          ],
+          "keywords": [
+            "webchat",
+            "livechat",
+            "widget"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Zoom",
+          "capabilities": [
+            "zoom-meetings",
+            "zoom-chat"
+          ],
+          "keywords": [
+            "zoom",
+            "meeting",
+            "video-call"
+          ]
+        }
+      ]
+    },
+    "social_media": {
+      "description": "Social media platforms \u2014 content creation, posting, engagement",
+      "team": "Team-SIN-Social",
+      "agents": [
+        {
+          "name": "A2A-SIN-X-Twitter",
+          "capabilities": [
+            "tweet",
+            "thread",
+            "engagement",
+            "analytics"
+          ],
+          "keywords": [
+            "twitter",
+            "x",
+            "tweet",
+            "thread"
+          ]
+        },
+        {
+          "name": "A2A-SIN-LinkedIn",
+          "capabilities": [
+            "linkedin-post",
+            "networking",
+            "outreach"
+          ],
+          "keywords": [
+            "linkedin",
+            "professional",
+            "networking"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Instagram",
+          "capabilities": [
+            "instagram-post",
+            "reels",
+            "stories"
+          ],
+          "keywords": [
+            "instagram",
+            "ig",
+            "reels",
+            "stories"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Facebook",
+          "capabilities": [
+            "facebook-post",
+            "groups",
+            "ads"
+          ],
+          "keywords": [
+            "facebook",
+            "fb"
+          ]
+        },
+        {
+          "name": "A2A-SIN-TikTok",
+          "capabilities": [
+            "tiktok-video",
+            "tiktok-engagement"
+          ],
+          "keywords": [
+            "tiktok"
+          ]
+        },
+        {
+          "name": "A2A-SIN-YouTube",
+          "capabilities": [
+            "youtube-upload",
+            "youtube-seo",
+            "thumbnails"
+          ],
+          "keywords": [
+            "youtube",
+            "yt",
+            "video"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Reddit",
+          "capabilities": [
+            "reddit-post",
+            "subreddit-engagement"
+          ],
+          "keywords": [
+            "reddit",
+            "subreddit"
+          ]
+        }
+      ]
+    },
+    "forums": {
+      "description": "Developer and business forums \u2014 outreach, engagement, content",
+      "team": "Team-SIN-Forum",
+      "agents": [
+        {
+          "name": "A2A-SIN-HackerNews",
+          "capabilities": [
+            "hn-post",
+            "hn-engagement"
+          ],
+          "keywords": [
+            "hackernews",
+            "hn",
+            "ycombinator"
+          ]
+        },
+        {
+          "name": "A2A-SIN-ProductHunt",
+          "capabilities": [
+            "ph-launch",
+            "ph-engagement"
+          ],
+          "keywords": [
+            "producthunt",
+            "ph",
+            "launch"
+          ]
+        },
+        {
+          "name": "A2A-SIN-StackOverflow",
+          "capabilities": [
+            "stackoverflow-answer",
+            "so-engagement"
+          ],
+          "keywords": [
+            "stackoverflow",
+            "so",
+            "question"
+          ]
+        },
+        {
+          "name": "A2A-SIN-DevTo",
+          "capabilities": [
+            "devto-post",
+            "devto-engagement"
+          ],
+          "keywords": [
+            "devto",
+            "dev.to"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Medium",
+          "capabilities": [
+            "medium-post",
+            "medium-engagement"
+          ],
+          "keywords": [
+            "medium",
+            "article",
+            "blog"
+          ]
+        },
+        {
+          "name": "A2A-SIN-IndieHackers",
+          "capabilities": [
+            "indiehackers-post",
+            "ih-engagement"
+          ],
+          "keywords": [
+            "indiehackers",
+            "indie"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Quora",
+          "capabilities": [
+            "quora-answer",
+            "quora-engagement"
+          ],
+          "keywords": [
+            "quora"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Lobsters",
+          "capabilities": [
+            "lobsters-post",
+            "lobsters-engagement"
+          ],
+          "keywords": [
+            "lobsters"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Slashdot",
+          "capabilities": [
+            "slashdot-post"
+          ],
+          "keywords": [
+            "slashdot"
+          ]
+        }
+      ]
+    },
+    "apple": {
+      "description": "Apple ecosystem \u2014 macOS, iOS, Calendar, Notes, FaceTime, Shortcuts",
+      "team": "Team-SIN-Apple",
+      "agents": [
+        {
+          "name": "A2A-SIN-Apple-Calendar-Contacts",
+          "capabilities": [
+            "calendar",
+            "contacts",
+            "events",
+            "reminders"
+          ],
+          "keywords": [
+            "calendar",
+            "contacts",
+            "event",
+            "schedule",
+            "appointment"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-Notes",
+          "capabilities": [
+            "apple-notes",
+            "note-creation",
+            "note-search"
+          ],
+          "keywords": [
+            "notes",
+            "note",
+            "memo"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-FaceTime",
+          "capabilities": [
+            "facetime-call",
+            "video-call"
+          ],
+          "keywords": [
+            "facetime",
+            "video-call"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-Mail",
+          "capabilities": [
+            "apple-mail",
+            "email"
+          ],
+          "keywords": [
+            "apple-mail"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-Mobile",
+          "capabilities": [
+            "iphone-control",
+            "mobile-automation"
+          ],
+          "keywords": [
+            "iphone",
+            "mobile",
+            "ios"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-DeviceControl",
+          "capabilities": [
+            "device-management",
+            "system-control"
+          ],
+          "keywords": [
+            "device",
+            "control",
+            "system"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-Shortcuts",
+          "capabilities": [
+            "shortcuts",
+            "automation-workflows"
+          ],
+          "keywords": [
+            "shortcuts",
+            "shortcut",
+            "automation"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-SystemSettings",
+          "capabilities": [
+            "system-preferences",
+            "macos-settings"
+          ],
+          "keywords": [
+            "settings",
+            "preferences",
+            "system"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-Photos-Files",
+          "capabilities": [
+            "photos",
+            "files",
+            "finder"
+          ],
+          "keywords": [
+            "photos",
+            "files",
+            "finder",
+            "images"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-Reminders",
+          "capabilities": [
+            "reminders",
+            "todo-lists"
+          ],
+          "keywords": [
+            "reminders",
+            "reminder",
+            "todo"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-Notifications",
+          "capabilities": [
+            "notifications",
+            "alerts"
+          ],
+          "keywords": [
+            "notification",
+            "alert",
+            "notify"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Apple-Safari-WebKit",
+          "capabilities": [
+            "safari",
+            "webkit",
+            "browser"
+          ],
+          "keywords": [
+            "safari",
+            "webkit",
+            "browser"
+          ]
+        }
+      ]
+    },
+    "commerce": {
+      "description": "E-commerce, payments, logistics, tax",
+      "team": "Team-SIN-Commerce",
+      "agents": [
+        {
+          "name": "A2A-SIN-Stripe",
+          "capabilities": [
+            "payments",
+            "subscriptions",
+            "checkout",
+            "invoices"
+          ],
+          "keywords": [
+            "stripe",
+            "payment",
+            "checkout",
+            "subscription",
+            "invoice",
+            "billing"
+          ]
+        },
+        {
+          "name": "A2A-SIN-TikTok-Shop",
+          "capabilities": [
+            "tiktok-shop",
+            "product-listing",
+            "orders"
+          ],
+          "keywords": [
+            "tiktok-shop",
+            "shop",
+            "product",
+            "listing"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Shop-Finance",
+          "capabilities": [
+            "shop-accounting",
+            "revenue-tracking"
+          ],
+          "keywords": [
+            "shop-finance",
+            "revenue",
+            "accounting"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Shop-Logistic",
+          "capabilities": [
+            "shipping",
+            "fulfillment",
+            "tracking"
+          ],
+          "keywords": [
+            "logistics",
+            "shipping",
+            "fulfillment",
+            "tracking"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Tax",
+          "capabilities": [
+            "tax-calculation",
+            "tax-filing",
+            "vat"
+          ],
+          "keywords": [
+            "tax",
+            "vat",
+            "filing",
+            "deduction"
+          ]
+        }
+      ]
+    },
+    "legal": {
+      "description": "Legal \u2014 patents, compliance, contracts, evidence, claims",
+      "team": "Team-SIN-Legal",
+      "agents": [
+        {
+          "name": "A2A-SIN-Patents",
+          "capabilities": [
+            "patent-filing",
+            "dpma",
+            "claims-writing"
+          ],
+          "keywords": [
+            "patent",
+            "dpma",
+            "gebrauchsmuster",
+            "invention"
+          ]
+        },
+        {
+          "name": "A2A-SIN-ClaimWriter",
+          "capabilities": [
+            "legal-claims",
+            "patent-claims"
+          ],
+          "keywords": [
+            "claim",
+            "claims"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Compliance",
+          "capabilities": [
+            "gdpr",
+            "compliance-audit",
+            "regulatory"
+          ],
+          "keywords": [
+            "compliance",
+            "gdpr",
+            "regulation",
+            "policy"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Contract",
+          "capabilities": [
+            "contract-drafting",
+            "contract-review"
+          ],
+          "keywords": [
+            "contract",
+            "agreement",
+            "terms",
+            "nda"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Damages",
+          "capabilities": [
+            "damage-assessment",
+            "liability-analysis"
+          ],
+          "keywords": [
+            "damages",
+            "liability",
+            "claim"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Evidence",
+          "capabilities": [
+            "evidence-collection",
+            "documentation"
+          ],
+          "keywords": [
+            "evidence",
+            "proof",
+            "documentation"
+          ]
+        }
+      ]
+    },
+    "infrastructure": {
+      "description": "DevOps, CI/CD, storage, n8n workflows, monitoring",
+      "team": "Team-SIN-Infrastructure",
+      "agents": [
+        {
+          "name": "A2A-SIN-CI-CD",
+          "capabilities": [
+            "github-actions",
+            "n8n-ci",
+            "oci-runner"
+          ],
+          "keywords": [
+            "ci",
+            "cd",
+            "pipeline",
+            "build",
+            "deploy"
+          ]
+        },
+        {
+          "name": "A2A-SIN-N8N",
+          "capabilities": [
+            "n8n-workflows",
+            "automation",
+            "webhooks"
+          ],
+          "keywords": [
+            "n8n",
+            "workflow",
+            "automation",
+            "webhook"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Github-Action",
+          "capabilities": [
+            "github-actions",
+            "workflows"
+          ],
+          "keywords": [
+            "github-action",
+            "workflow",
+            "action"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Box-Storage",
+          "capabilities": [
+            "file-storage",
+            "log-storage",
+            "cdn"
+          ],
+          "keywords": [
+            "storage",
+            "box",
+            "files",
+            "upload",
+            "download"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Storage",
+          "capabilities": [
+            "data-storage",
+            "backup"
+          ],
+          "keywords": [
+            "storage",
+            "backup",
+            "data"
+          ]
+        }
+      ]
+    },
+    "google": {
+      "description": "Google Workspace \u2014 Docs, Sheets, Drive, Gmail, Calendar",
+      "team": "Team-SIN-Google",
+      "agents": [
+        {
+          "name": "A2A-SIN-Google-Apps",
+          "capabilities": [
+            "google-docs",
+            "google-sheets",
+            "google-drive",
+            "gmail"
+          ],
+          "keywords": [
+            "google",
+            "docs",
+            "sheets",
+            "drive",
+            "gmail",
+            "workspace"
+          ]
+        }
+      ]
+    },
+    "research": {
+      "description": "Research, analysis, intelligence gathering",
+      "team": "Team-SIN-Research",
+      "agents": [
+        {
+          "name": "A2A-SIN-Research",
+          "capabilities": [
+            "web-research",
+            "analysis",
+            "report-generation"
+          ],
+          "keywords": [
+            "research",
+            "analyze",
+            "investigate",
+            "report",
+            "find",
+            "search"
+          ]
+        },
+        {
+          "name": "A2A-SIN-MiroFish",
+          "capabilities": [
+            "swarm-intelligence",
+            "prediction",
+            "simulation"
+          ],
+          "keywords": [
+            "prediction",
+            "simulation",
+            "swarm",
+            "forecast"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Summary",
+          "capabilities": [
+            "summarization",
+            "digest",
+            "briefing"
+          ],
+          "keywords": [
+            "summary",
+            "summarize",
+            "digest",
+            "brief"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Paragraph",
+          "capabilities": [
+            "writing",
+            "content-generation"
+          ],
+          "keywords": [
+            "write",
+            "paragraph",
+            "content",
+            "text"
+          ]
+        }
+      ]
+    },
+    "media": {
+      "description": "Media creation \u2014 video, music, images, content",
+      "team": "Team-SIN-Media-ComfyUI",
+      "sub_teams": [
+        "Team-SIN-Media-Music"
+      ],
+      "agents": []
+    },
+    "community": {
+      "description": "Community management and outreach",
+      "team": "Team-SIN-Community",
+      "agents": [
+        {
+          "name": "A2A-SIN-Community",
+          "capabilities": [
+            "community-management",
+            "outreach",
+            "engagement"
+          ],
+          "keywords": [
+            "community",
+            "outreach",
+            "engage"
+          ]
+        }
+      ]
+    },
+    "money": {
+      "description": "Revenue generation \u2014 surveys, freelancing, bug bounties",
+      "team": "A2A-SIN-Team-MoneyEarners",
+      "agents": [
+        {
+          "name": "A2A-SIN-Worker-Prolific",
+          "capabilities": [
+            "prolific-surveys",
+            "survey-automation"
+          ],
+          "keywords": [
+            "prolific",
+            "survey",
+            "earn",
+            "money"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Worker-heypiggy",
+          "capabilities": [
+            "heypiggy-surveys"
+          ],
+          "keywords": [
+            "heypiggy",
+            "survey"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Mindrift",
+          "capabilities": [
+            "mindrift-tasks",
+            "micro-tasks"
+          ],
+          "keywords": [
+            "mindrift",
+            "task"
+          ]
+        }
+      ]
+    },
+    "gaming": {
+      "description": "Gaming platform integrations",
+      "agents": [
+        {
+          "name": "A2A-SIN-PlayStation",
+          "capabilities": [
+            "psn-messaging"
+          ],
+          "keywords": [
+            "playstation",
+            "psn"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Xbox",
+          "capabilities": [
+            "xbox-messaging"
+          ],
+          "keywords": [
+            "xbox",
+            "xbl"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Nintendo",
+          "capabilities": [
+            "nintendo-messaging"
+          ],
+          "keywords": [
+            "nintendo",
+            "switch"
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "description": "Meta-agents \u2014 self-extension, fleet management, orchestration",
+      "agents": [
+        {
+          "name": "A2A-SIN-Medusa",
+          "capabilities": [
+            "self-extension",
+            "mcp-synthesis",
+            "capability-gap-detection"
+          ],
+          "keywords": [
+            "medusa",
+            "extend",
+            "capability",
+            "gap",
+            "new-tool"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Team-MyCompany",
+          "capabilities": [
+            "company-management",
+            "hr",
+            "operations"
+          ],
+          "keywords": [
+            "company",
+            "hr",
+            "operations",
+            "team"
+          ]
+        },
+        {
+          "name": "A2A-SIN-Opal",
+          "capabilities": [
+            "access-control",
+            "permissions"
+          ],
+          "keywords": [
+            "opal",
+            "access",
+            "permissions"
+          ]
+        }
+      ]
+    }
+  },
+  "teams": [
+    {
+      "name": "Team-SIN-Code-Core",
+      "domain": "coding",
+      "description": "Core coding team \u2014 all software development agents"
+    },
+    {
+      "name": "Team-SIN-Code-Frontend",
+      "domain": "coding",
+      "description": "Frontend development specialists"
+    },
+    {
+      "name": "Team-SIN-Code-Backend",
+      "domain": "coding",
+      "description": "Backend development specialists"
+    },
+    {
+      "name": "Team-SIN-Code-CyberSec",
+      "domain": "security",
+      "description": "Cybersecurity team \u2014 all 16 security agents"
+    },
+    {
+      "name": "Team-SIN-Messaging",
+      "domain": "messaging",
+      "description": "All 22 messaging platform agents"
+    },
+    {
+      "name": "Team-SIN-Social",
+      "domain": "social_media",
+      "description": "Social media engagement agents"
+    },
+    {
+      "name": "Team-SIN-Forum",
+      "domain": "forums",
+      "description": "Developer forum engagement agents"
+    },
+    {
+      "name": "Team-SIN-Apple",
+      "domain": "apple",
+      "description": "Apple ecosystem agents"
+    },
+    {
+      "name": "Team-SIN-Commerce",
+      "domain": "commerce",
+      "description": "E-commerce and payments agents"
+    },
+    {
+      "name": "Team-SIN-Legal",
+      "domain": "legal",
+      "description": "Legal and compliance agents"
+    },
+    {
+      "name": "Team-SIN-Infrastructure",
+      "domain": "infrastructure",
+      "description": "DevOps and infrastructure agents"
+    },
+    {
+      "name": "Team-SIN-Google",
+      "domain": "google",
+      "description": "Google Workspace agents"
+    },
+    {
+      "name": "Team-SIN-Research",
+      "domain": "research",
+      "description": "Research and analysis agents"
+    },
+    {
+      "name": "Team-SIN-Media-ComfyUI",
+      "domain": "media",
+      "description": "Media creation agents"
+    },
+    {
+      "name": "Team-SIN-Media-Music",
+      "domain": "media",
+      "description": "Music creation agents"
+    },
+    {
+      "name": "Team-SIN-Community",
+      "domain": "community",
+      "description": "Community management agents"
+    },
+    {
+      "name": "Team-SIN-Microsoft",
+      "domain": "messaging",
+      "description": "Microsoft ecosystem agents"
+    }
+  ]
+}
