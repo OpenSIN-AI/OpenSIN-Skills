@@ -50,5 +50,20 @@
 - Package manager: bun (never npm)
 - Comments: extensive, explain WHY not just WHAT
 
+## Boundary Rules
+
+Before adding a skill or top-level claim, answer:
+
+1. Is this reusable skill knowledge/action content, or is it repo/runtime/product truth?
+2. Does another OpenSIN repo already own the canonical source of truth?
+
+### Put it in `OpenSIN-Skills` if:
+- it is reusable skill content
+- it improves skill standards, triggers, templates, or validation
+
+### Do NOT put it in `OpenSIN-Skills` if:
+- it claims runtime or product ownership
+- it duplicates official docs canon
+
 ## License
 All contributions are under the MIT License.
